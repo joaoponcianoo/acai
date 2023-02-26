@@ -18,16 +18,17 @@ body {
     background-color: var(--white);
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1em;
+
 }
 
 .header-logo {
     color: var(--purple);
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 800;
     text-decoration: none;
 }
@@ -42,57 +43,61 @@ body {
     font-weight: 600;
     
     color: var(--black);
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 .header-nav-ul a:hover {
     color: var(--purple);
 }
 
-#signup {
-    background-color: var(--purple);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 50px;
-
-    box-shadow: 2px 2px 10px #00000050;
-    font-size: 1rem;
-
+#img-cart {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-
 }
 
-.main {
+.main-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0em 1em 1em 1em;
 }
 
-.main-content {
-    width: 50rem;
-    padding: 1rem;
+.items-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    width: 1200px;
+    height: 100%;
 }
 
-.main-content h1 {
-    line-height: 2rem;
-    padding-bottom: 1rem;
+.item-card {
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px #00000010;
+    cursor: pointer;
+
+
 }
+
+.item-card__images {
+    width: 250px;
+    height: 250px;
+}
+
+
 
  
-#acai-img {
-    width: 100%;
-    height: 100%;
 
 
-}
 
-.acai {
-    color: var(--purple);
-}
+
+
+
+
 
 @media (max-width: 767px) {
     .header-nav-ul {
@@ -103,4 +108,7 @@ body {
         flex-wrap: wrap;
     }
 
+    .main-content {
+        padding: 0;
+    }
 }
